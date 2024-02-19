@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 20px;
+  min-height: 90vh;
+  background-color: #58595985;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+h1 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+small {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+form input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  background-color: #62626384;
+}
+
+form button {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  background-color: #256de285;
+}
+form label {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+.displays {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 866px) {
+  form {
+    flex-direction: column;
+  }
+  form input {
+    width: 100%;
+  }
+  form button {
+    width: 100%;
+  }
+  .displays {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  form {
+    flex-direction: column;
+  }
+  form input {
+    width: 100%;
+  }
+  form button {
+    width: 100%;
+  }
+  .displays {
+    grid-template-columns: 1fr;
+  }
+}
